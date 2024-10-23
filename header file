@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<string.h>
+typedef struct student{
+int rollno;
+char name[100];
+float marks;
+struct student *next;
+}sll;
+void add_begin(sll**);
+int add_middle(sll**);
+void add_end(sll**);
+void print_node(sll*);
+int count_node(sll*);
+void save_file(sll*);
+void read_file(sll**);
+void reverse_print(sll*);
+void delete_all(sll**);
+void delete_node(sll**);
+void searach_node(sll*);
+void sort_node(sll*);
